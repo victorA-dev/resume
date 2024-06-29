@@ -1,0 +1,13 @@
+# editor
+.vscode
+
+# dependencies
+node_modules
+
+# ts
+*.tsbuildinfo
+next-env.d.ts
+
+# next
+.next
+.out
