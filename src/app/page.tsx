@@ -1,4 +1,4 @@
-import ExportedImage from 'next-image-export-optimizer';
+import Image from 'next/image';
 import imgSrc from '../../public/images/frenchCountryside.jpg';
 
 const Page = () => (
@@ -25,7 +25,7 @@ const Page = () => (
             </a>
             .
         </p>
-        <ExportedImage
+        <Image
             alt="french countryside"
             src={imgSrc}
             className="rounded-lg"
