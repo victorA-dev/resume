@@ -19,7 +19,7 @@ const Page = () => (
             <a
                 href="https://galadrim.fr/"
                 target="_blank"
-                className="font-semibold hover:text-neutral-500"
+                className="font-semibold text-blue-800 hover:text-neutral-500"
             >
                 Galadrim
             </a>
@@ -29,7 +29,6 @@ const Page = () => (
             alt="french countryside"
             src={imgSrc}
             className="rounded-lg"
-            placeholder="blur"
             priority
         />
     </>

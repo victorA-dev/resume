@@ -18,11 +18,12 @@ export const NavLink = ({
     return (
         <Link
             className={`flex flex-row items-center gap-1 [&>svg>g]:hover:stroke-neutral-500 [&_p]:hover:text-neutral-500`}
+            aria-label={`Go to ${text} page`}
             {...linkProps}
         >
             <Icon className="h-6 w-6" />
             <p
-                className={`border-b-2 ${hasBorder ? 'border-neutral-500' : 'border-transparent'} text-sm`}
+                className={`border-b-2 ${hasBorder ? 'border-blue-800' : 'border-transparent'} text-sm`}
             >
                 {text}
             </p>

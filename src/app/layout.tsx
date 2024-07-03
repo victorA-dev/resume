@@ -6,6 +6,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
     title: { default: 'Victor Antoine', template: '%s | Victor Antoine' },
+    description: 'Personal website of Victor Antoine - Full-stack engineer',
 };
 
 const montserrat = Montserrat({

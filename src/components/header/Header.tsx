@@ -5,7 +5,7 @@ import { useState } from 'react';
 import colors from 'tailwindcss/colors';
 import { Logo } from '../icons/Logo';
 import { NavLink } from './NavLink';
-import { URLS } from './urls';
+import { PATHS, URLS } from './urls';
 
 export const Header = () => (
     <header className="peer">
@@ -54,7 +54,7 @@ const MobileHeader = () => {
                     </nav>
                 </div>
             </div>
-            <Link href={'/'}>
+            <Link href={PATHS.about} aria-label="Go to home page">
                 <Logo
                     id="logo-mobile"
                     height={42}
@@ -69,7 +69,7 @@ const MobileHeader = () => {
 const DesktopHeader = () => (
     <div className="fixed z-10 hidden w-full border-b-[1px] border-b-neutral-200  bg-neutral-50 sm:block">
         <div className="mx-auto flex h-16 max-w-2xl items-center gap-10 px-6">
-            <Link href={'/'}>
+            <Link href={PATHS.about} aria-label="Go to home page">
                 <Logo
                     id="logo-desktop"
                     height={48}

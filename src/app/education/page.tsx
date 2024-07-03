@@ -46,7 +46,7 @@ const Page = () => (
             <a
                 href="https://cognition.ens.fr/"
                 target="_blank"
-                className="font-semibold hover:text-neutral-500"
+                className="font-semibold text-blue-800 hover:text-neutral-500"
             >
                 ENS
             </a>
