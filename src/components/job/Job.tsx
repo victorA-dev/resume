@@ -54,7 +54,11 @@ const JobDates = ({ date }: Pick<JobProps, 'date'>) => {
 const Location = ({ name, url }: { name: string; url?: string }) => (
     <p className="text-sm font-semibold">
         {url !== undefined ? (
-            <a href={url} target="_blank" className="hover:text-neutral-500">
+            <a
+                href={url}
+                target="_blank"
+                className="text-blue-800 hover:text-neutral-500"
+            >
                 @{name}
             </a>
         ) : (
