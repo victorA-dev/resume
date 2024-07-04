@@ -4,6 +4,7 @@
 const nextConfig = {
     output: 'export',
     basePath: '/resume',
+    trailingSlash: true,
     images: { unoptimized: true },
 };
 
