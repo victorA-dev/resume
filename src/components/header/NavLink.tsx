@@ -4,7 +4,15 @@ import Link, { LinkProps } from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ICONS, IconName } from './icons';
 
-const isCurrentPage = (pathname: string, href: string) => pathname === href;
+const removeTrailingSlash = (input: string) => {
+    if (input.endsWith('/')) {
+        return input.length === 1 ? input : input.slice(0, -1);
+    }
+    return input;
+};
+
+const isCurrentPage = (pathname: string, href: string) =>
+    removeTrailingSlash(pathname) === href;
 
 export const NavLink = ({
     text,
