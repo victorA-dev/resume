@@ -40,8 +40,8 @@ const MobileHeader = () => {
                 onClick={handleChange}
             ></div>
             <div className="fixed left-0 top-0 z-20 h-full w-[50%] -translate-x-full overflow-y-auto overscroll-y-none transition duration-300 ease-out peer-has-[:checked]:translate-x-0">
-                <div className="h-full w-full bg-white px-4 py-16">
-                    <nav className="flex flex-col gap-4">
+                <div className="h-full w-full bg-white px-4 py-20">
+                    <nav className="flex flex-col gap-6">
                         {URLS.map(({ text, path, icon }) => (
                             <NavLink
                                 key={path}
